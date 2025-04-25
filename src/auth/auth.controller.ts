@@ -35,8 +35,6 @@ export class AuthController {
     const code = req.query.code;
     try {
       const tokens = await this.authService.exchangeCodeForTokens(code);
-      // In a real application, you might want to store the tokens in a secure cookie
-      // or handle them according to your frontend requirements
       res.json(tokens);
     } catch (error) {
       res.status(400).json({ error: 'Failed to exchange code for tokens' });
