@@ -1,12 +1,11 @@
 # ProSupport
 
-**ProSupport** is a schema-based, multi-tenant support ticketing system built with **NestJS**, **MongoDB**, and **Auth0**. Designed as a SaaS starter project, it helps showcase scalable backend architecture for support-driven applications.
+**ProSupport** is a support ticketing system built with **NestJS**, **MongoDB**, and **Auth0**. Designed as a SaaS starter project, it helps showcase scalable backend architecture for support-driven applications.
 
 ---
 
 ## 🚀 Features
 
-- Schema-based Multi-tenancy (Org-level separation)
 - Auth0 Authentication and Role-based Access Control (RBAC)
 - Ticket Type Templates (dynamic input fields per org)
 - Support Ticket CRUD
@@ -49,7 +48,7 @@ pro-support/
 
 | Role        | Permissions                       |
 | ----------- | --------------------------------- |
-| Super Admin | Global control, analytics, config |
+| System Admin | Global control, analytics, config |
 | Org Admin   | Manage org, users, ticket types   |
 | Support     | Manage & resolve tickets          |
 | Member      | Create/view own tickets           |
